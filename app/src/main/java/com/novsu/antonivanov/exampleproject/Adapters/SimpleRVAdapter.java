@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.novsu.antonivanov.exampleproject.R;
-import com.novsu.antonivanov.exampleproject.objects.BaseObject;
+import com.novsu.antonivanov.exampleproject.MyObjects.BaseObject;
 
 import java.util.ArrayList;
 

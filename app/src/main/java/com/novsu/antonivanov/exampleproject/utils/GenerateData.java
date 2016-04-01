@@ -1,6 +1,6 @@
 package com.novsu.antonivanov.exampleproject.utils;
 
-import com.novsu.antonivanov.exampleproject.objects.BaseObject;
+import com.novsu.antonivanov.exampleproject.MyObjects.BaseObject;
 
 import java.util.ArrayList;
 import java.util.Random;
