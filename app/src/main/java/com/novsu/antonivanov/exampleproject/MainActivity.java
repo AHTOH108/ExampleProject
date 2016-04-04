@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.novsu.antonivanov.exampleproject.CustomBehavior.CustomBehaviorActivity;
+import com.novsu.antonivanov.exampleproject.TestNotification.NotificationActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -18,6 +19,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Button btnGoCustomBehavior = (Button) findViewById(R.id.buttonGoCustomBehavior);
         if (btnGoCustomBehavior != null)
             btnGoCustomBehavior.setOnClickListener(this);
+
+        Button btnGoNotification = (Button) findViewById(R.id.buttonGoTestNotification);
+        if (btnGoNotification != null)
+            btnGoNotification.setOnClickListener(this);
     }
 
     @Override
@@ -26,11 +31,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.buttonGoCustomBehavior:
                 goActivityCustomBehavior();
                 break;
+            case R.id.buttonGoTestNotification:
+                goActivityNotification();
+                break;
         }
     }
 
     private void goActivityCustomBehavior(){
         Intent intent = new Intent(this, CustomBehaviorActivity.class);
+        startActivity(intent);
+    }
+
+    private void goActivityNotification(){
+        Intent intent = new Intent(this, NotificationActivity.class);
         startActivity(intent);
     }
 }
