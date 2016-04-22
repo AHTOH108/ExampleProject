@@ -39,7 +39,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
-                    android:text="Длинный длинный заголовок кторый должен анимироваться оп, вот"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="30dp"
                     android:textColor="@color/color_white"
                     app:layout_behavior="com.novsu.antonivanov.exampleproject.CustomBehavior.TitleTextBehavior"
                     android:textSize="30dp" />
@@ -103,7 +104,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="?attr/actionBarSize"
         android:paddingLeft="10dp"
-        android:text="Длинный длинный заголовок кторый должен анимироваться оп, вот"
+        android:paddingRight="30dp"
+        android:text="weigfohnrobn bjjsb dfjsdb fi bsd ifbwe bfs k;je bfkaej b"
         android:textSize="30sp"
         app:layout_behavior="com.novsu.antonivanov.exampleproject.CustomBehavior.TitleTextBehavior" />
 
