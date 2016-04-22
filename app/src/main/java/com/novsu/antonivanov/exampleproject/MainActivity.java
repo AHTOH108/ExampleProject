@@ -8,6 +8,7 @@ import android.widget.Button;
 
 import com.novsu.antonivanov.exampleproject.CustomBehavior.CustomBehaviorActivity;
 import com.novsu.antonivanov.exampleproject.TestNotification.NotificationActivity;
+import com.novsu.antonivanov.exampleproject.WebView.WebViewActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -23,6 +24,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Button btnGoNotification = (Button) findViewById(R.id.buttonGoTestNotification);
         if (btnGoNotification != null)
             btnGoNotification.setOnClickListener(this);
+
+        Button btnGoWebView = (Button) findViewById(R.id.buttonGoTestWebView);
+        if (btnGoWebView != null)
+            btnGoWebView.setOnClickListener(this);
     }
 
     @Override
@@ -34,6 +39,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.buttonGoTestNotification:
                 goActivityNotification();
                 break;
+            case R.id.buttonGoTestWebView:
+                goActivityWebView();
+                break;
         }
     }
 
@@ -44,6 +52,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private void goActivityNotification(){
         Intent intent = new Intent(this, NotificationActivity.class);
+        startActivity(intent);
+    }
+
+    private void goActivityWebView(){
+        Intent intent = new Intent(this, WebViewActivity.class);
         startActivity(intent);
     }
 }

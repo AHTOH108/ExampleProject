@@ -54,6 +54,16 @@
                 android:textAllCaps="false"
                 android:textSize="18sp" />
 
+            <Button
+                android:id="@+id/buttonGoTestWebView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="6dp"
+                android:text="@string/button_go_webview"
+                android:textAllCaps="false"
+                android:textSize="18sp" />
+
         </LinearLayout>
     </android.support.v4.widget.NestedScrollView>
 

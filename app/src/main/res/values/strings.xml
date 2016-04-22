@@ -6,10 +6,24 @@
     <string name="button_go_recycler_view">RecyclerView</string>
     <string name="button_go_custom_behavior">CustomBehavior</string>
     <string name="button_go_notification">Notification</string>
+    <string name="button_go_webview">WebView</string>
 
-    <string name="html_script_1">q</string>
-    
-    
+    <string name="html_script_1"><![CDATA[
+<html>
+<body>
+    <h1>Считаем кроликов</h1>
+    <script type="text/javascript">
+        for(var i=1; i<=3; i++) {
+            alert("Из шляпы достали "+i+" кролика!")
+        }
+    </script
+    <h1>..Посчитали</h1>
+</body>
+</html>
+
+    ]]></string>
+
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
