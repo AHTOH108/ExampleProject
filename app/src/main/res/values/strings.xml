@@ -7,6 +7,7 @@
     <string name="button_go_custom_behavior">CustomBehavior</string>
     <string name="button_go_notification">Notification</string>
     <string name="button_go_webview">WebView</string>
+    <string name="button_go_sharing_fb">Sharing FB</string>
 
     <string name="html_script_1"><![CDATA[
 <html>

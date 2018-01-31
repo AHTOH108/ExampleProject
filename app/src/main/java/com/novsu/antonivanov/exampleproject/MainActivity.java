@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.novsu.antonivanov.exampleproject.CustomBehavior.CustomBehaviorActivity;
+import com.novsu.antonivanov.exampleproject.SharingFB.SharingFBActivity;
 import com.novsu.antonivanov.exampleproject.TestNotification.NotificationActivity;
 import com.novsu.antonivanov.exampleproject.WebView.WebViewActivity;
 
@@ -28,6 +29,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Button btnGoWebView = (Button) findViewById(R.id.buttonGoTestWebView);
         if (btnGoWebView != null)
             btnGoWebView.setOnClickListener(this);
+
+        Button btnGoSharingFB = (Button) findViewById(R.id.buttonGoSharingFB);
+        if (btnGoSharingFB != null)
+            btnGoSharingFB.setOnClickListener(this);
     }
 
     @Override
@@ -41,6 +46,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.buttonGoTestWebView:
                 goActivityWebView();
+                break;
+            case R.id.buttonGoSharingFB:
+                goActivitySharingFB();
                 break;
         }
     }
@@ -57,6 +65,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private void goActivityWebView(){
         Intent intent = new Intent(this, WebViewActivity.class);
+        startActivity(intent);
+    }
+
+    private void goActivitySharingFB(){
+        Intent intent = new Intent(this, SharingFBActivity.class);
         startActivity(intent);
     }
 }
